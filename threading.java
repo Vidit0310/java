@@ -34,12 +34,6 @@ class threading extends Thread {
         threading t1 = new threading("t1");
         threading t2 = new threading("t2");
         t1.start();
-        try {
-            t1.join();
-        } catch (InterruptedException e) {
-            System.out.println("e");
-
-        }
         t2.start();
 
     }
